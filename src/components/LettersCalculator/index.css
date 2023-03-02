@@ -1,0 +1,53 @@
+/* Write your code here. */
+
+.bg-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 400px;
+}
+.text-container {
+  font-family: 'roboto';
+  color: white;
+}
+input {
+  width: 300px;
+  padding: 8px;
+  background-color: transparent;
+  border: white solid 1px;
+  margin-top: 5px;
+  font-size: 20px;
+  outline: none;
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  color: #1d976c;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .bg-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  img {
+    width: 50%;
+    order: 1;
+  }
+  h1 {
+    font-size: 50px;
+    max-width: 350px;
+  }
+}
