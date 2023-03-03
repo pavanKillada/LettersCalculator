@@ -8,8 +8,7 @@ class LetterCalculator extends Component {
   onSearchChange = event => {
     this.setState(() => {
       const searchInput = event.target.value
-      const inputWithNoSpaces = searchInput.replaceAll(' ', '')
-      return {searchInput, inputLength: inputWithNoSpaces.length}
+      return {searchInput, inputLength: searchInput.length}
     })
   }
 
